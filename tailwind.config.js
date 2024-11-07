@@ -16,7 +16,7 @@ export default {
                 title: ['datatrash'],
                 mainmenu: ['vinyl'],
                 boldtitle: ['boldfinger'],
-                extratitle: ['russiandollmaker'],
+                extratitle: ['dollmaker'],
                 splash: ['SquadaOne'],
                 bebas: ['BebasNeue'],
             },
