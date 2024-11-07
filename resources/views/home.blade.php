@@ -13,8 +13,17 @@
 <body>
 
 
-    <div class="border-black border-4 m-2 h-48">
-        <h1 class="font-bold text-lg font-title">LiteralHat.com</h1>
+    <div class="border-black border-4 m-2 h-48 p-3 flex items-end">
+        <h1 class="font-bold text-5xl font-title tracking-wide ">LiteralHat.com</h1>
+        <img class="h-36 pl-4" src="/img/literalhat_banner_ska-band.webp">
+
+        <div class="font-splash leading-5 pl-40 pb-10">
+            <p>Be gay, do crime.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Create more than you consume.</p>
+            <p class="font-bold italic">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skank like your life depends on it.</p>
+            </div>
+        </div>
+
     </div>
 
     <!-- I know it's awful but bare with me I can't come up with a better solution at the moment :s -->
@@ -60,12 +69,17 @@
 
         </div>
         <div class="bg-white w-1/2 flex flex-grow flex-col">
-            <div class="m-1 p-1 border-4 border-black flex-grow">
+            <div class="m-1.5 p-2 border-4 border-black flex-grow">
                 <div class="bg-black p-3">
-                    <h1 class="text-white uppercase">Welcome Home.</h1>
+                    <h1 class="text-white uppercase font-title text-4xl border-b-4 p-2">Welcome Home.</h1>
                 </div>
-                <p>Hi, welcome to LiteralHat.com.</p>
+
+
+
+                <div class="p-4 font-sans"> 
+                <p class="font-bold">Hi, welcome to LiteralHat.com.</p>
                 <p>If you encounter any issues, please create a new ticket on the site's Github.</p>
+                </div>
 
             </div>
         </div>

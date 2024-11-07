@@ -16,8 +16,14 @@ export default {
                 title: ['datatrash'],
                 mainmenu: ['vinyl'],
                 boldtitle: ['boldfinger'],
-                extratitle: ['russiandollmaker']
+                extratitle: ['russiandollmaker'],
+                splash: ['SquadaOne'],
+                bebas: ['BebasNeue'],
             },
+
+            spacing: {
+                '1.5': '0.375rem', // This is the equivalent of 6px
+              },
 
 
         },
