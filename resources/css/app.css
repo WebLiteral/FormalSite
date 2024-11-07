@@ -1,3 +1,26 @@
+@font-face {
+    font-family: boldfinger; 
+    src: url('fonts/Boldfinger.ttf')
+}
+
+@font-face {
+    font-family: datatrash; 
+    src: url('fonts/DataTrash.ttf')
+}
+
+@font-face {
+    font-family: dollmaker; 
+    src: url('fonts/RussianDollmaker.otf')
+}
+
+@font-face {
+    font-family: vinyl; 
+    src: url('fonts/vinyl.ttf')
+}
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
