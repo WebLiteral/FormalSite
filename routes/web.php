@@ -18,3 +18,9 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::view('/', 'home');
+
+
+
+Route::view('/about', 'about');
