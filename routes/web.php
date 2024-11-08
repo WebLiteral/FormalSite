@@ -21,6 +21,6 @@ require __DIR__.'/auth.php';
 
 Route::view('/home', 'home');
 
-
+Route::view('/about', 'about');
 
 Route::view('/articles', 'articles');

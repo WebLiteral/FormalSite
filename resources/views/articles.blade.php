@@ -7,7 +7,7 @@
 
 <div class='flex flex-col items-center text-center font-cambria '>
 
-    <h1 class="font-oldenglish text-7xl border-t-2 w-max border-b-2 pb-3 pt-1 px-4 m-10">Articles</h1>
+    <h1 class="font-oldenglish text-7xl w-max  pb-3 pt-1 px-4 m-10 lh-doubleborders">Articles</h1>
 
     <div class="w-3/5 space-y-2">
         <p>Stuff you may or may not want to know.</p>
