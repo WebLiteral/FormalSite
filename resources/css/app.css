@@ -47,6 +47,9 @@
     src: url('fonts/OldEnglishText.ttf')
 }
 
+.lh-doubleborders {
+    @apply border-t-2 border-b-2 border-white 
+}
 
 @tailwind base;
 @tailwind components;
