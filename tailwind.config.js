@@ -13,10 +13,10 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-                title: ['datatrash'],
-                mainmenu: ['vinyl'],
-                boldtitle: ['boldfinger'],
-                extratitle: ['dollmaker'],
+                datatrash: ['datatrash'],
+                mainmenu: ['Niagara'],
+                cambria: ['Cambria'],
+                oldenglish: ['OldEnglish'],
                 splash: ['SquadaOne'],
                 bebas: ['BebasNeue'],
             },

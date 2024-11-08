@@ -12,25 +12,37 @@
 
 <body>
 
-    <div class="flex bg-black justify-evenly border-b-4">
-        
-<div class="w-1"></div>
-    <div class="p-4">
+    <div class="bg-black border-b-2 flex justify-center">
 
-        <h1 class="font-bold text-white text-5xl font-title tracking-wide "><a href='/home'>LiteralHat.com</a></h1>
+        <div class="w-4/5 p-2 pt-3 text-white justify-between flex ">
 
-    </div>
-    <div class="w-24"></div>
-    <div class="w-3/6"></div>
-    <div class="w-1"></div>
+            <h1 class="font-bold text-3xl font-datatrash tracking-wide "><a href='/home'>LiteralHat.com</a></h1>
+
+            <nav>
+
+                <ul class="flex gap-20 uppercase font-mainmenu text-4xl">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="discography.html">Discography</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="community.html">Community</a></li>
+
+
+                </ul>
+            </nav>
+
+
+
+
+        </div>
     </div>
 
 
     <!-- I know it's awful but bare with me I can't come up with a better solution at the moment :s -->
-    <div class="bg-black h-10">
-        <ul class="text-white flex justify-evenly font-boldtitle pt-1 text-xl">
-            <span></span>
-            <span></span>
+    <div class="bg-black flex justify-center">
+        <ul class="text-white flex justify-between font-cambria text-sm w-4/5">
+
             <li>Cat Sounds!</li>
             <span>|</span>
             <li><a href='https://crimethinc.com/tce' target='_blank'>Liberty!</a></li>
@@ -41,69 +53,48 @@
             <span>|</span>
             <li><a href='https://diyconspiracy.net/' target='_blank'>DIY Conspiracy!</a></li>
             <span>|</span>
+            <li><a href='' target='_blank'>InfluencerJunk!</a></li>
+            <span>|</span>
+            <li><a href='' target='_blank'>Free Stuff!</a></li>
+            <span>|</span>
             <li><a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank'>Sauerkraut Recipe!</a></li>
             <span>|</span>
             <li>Idk yet</li>
-            <span></span>
-            <span></span>
+            <span>|</span>
+            <li>Marla!</li>
+
         </ul>
     </div>
 
 
 
-    <div class="bg-green-600 h-screen flex justify-center">
-        <div class="bg-checkered flex-grow"></div>
-        <div class="bg-black w-56 p-2 pt-0">
-            <div class="border-white border-4 text-white pt-1 p-3 mb-3">
-                <ul class="uppercase font-mainmenu text-4xl tracking-wider leading-relaxed">
-                    <li>Home</li>
-                    <li>Gallery</li>
-                    <li>Articles</li>
-                    <li>Community</li>
-                    <li>Store</li>
-                    <li>About</li>
-                </ul>
-            </div>
+    <div class="h-screen bg-black flex justify-center">
+        <div class="w-4/5  pt-6 p-6 text-white font-cambria">
 
+            <div class='flex flex-col items-center text-center font-cambria'>
 
+                <h1 class="font-oldenglish text-7xl border-t-2 w-max border-b-2 pb-3 pt-1 px-4 m-10">Page Title</h1>
 
-        </div>
-        <div class="bg-white w-1/2 flex flex-grow flex-col">
-            <div class="m-1.5 p-2 border-4 border-black flex-grow">
-                <div class="bg-black p-3">
-                    <h1 class="text-white uppercase font-title text-4xl border-b-4 p-2">Welcome Home.</h1>
-                </div>
+                <div class="w-3/5 space-y-2">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate dolorem at sapiente
+                        accusantium veritatis voluptate unde nam incidunt sit recusandae quis animi placeat, non nulla
+                        veniam eveniet laboriosam magni? Vel?</p>
+                    <p>onsequuntur, perferendises error doloremque. Animi.</p>
 
-
-
-                <div class="p-4 font-sans">
-                    <p class="font-bold">Hi, welcome to LiteralHat.com.</p>
-                    <p>If you encounter any issues, please create a new ticket on the site's Github.</p>
                 </div>
 
             </div>
 
-            <div class="bg-black h-8 flex justify-end">
-                <p class="text-white pt-1 underline"><a href=''>Back to top</a></p>
-            </div>
-
         </div>
-
-        <div class="bg-black w-72 p-2 pt-0">
-        <div class="border-white border-4 text-white p-3  mb-3">
-        <p class="font-extratitle text-5xl">not sure what to put here yet</p>
-
-        </div>
-
-
-
-        </div>
-        <div class="bg-stripe flex-grow"></div>
     </div>
 
-    <div class="bg-black h-64 border-t-4 border-white">
+
+
+
+
+    <div class="bg-black h-64 border-t-2 border-white">
         <div class="bg-black h-9 text-white flex flex-col items-center">
-            <ul class=" flex gap-4 font-bold underline p-5 text-xl">
+            <ul class=" flex gap-4 text-sm font-cambria">
                 <li><a href='/about'>About</a></li>
                 <span>|</span>
                 <li><a href='/about/faq'>FAQ</a></li>
@@ -118,8 +109,8 @@
                 <span>|</span>
                 <li><a href='/sitemap'></a>Sitemap</li>
             </ul>
-            <p class="font-bold text-5xl font-title tracking-wide p-2"><a href='/home'>LiteralHat.com</a></p>
-            <p class="p-2">©2020 - 2024. All rights reserved.</p>
+            <p class="font-bold text-4xl p-3 font-datatrash tracking-wide "><a href='/home'>LiteralHat.com</a></p>
+            <p class="text-xs font-cambria">©2020 - 2024. All rights reserved.</p>
 
 
         </div>
