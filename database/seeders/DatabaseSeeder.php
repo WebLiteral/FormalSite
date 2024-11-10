@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\Artwork;
 use App\Models\User;
 use App\Models\Article;
+use App\Models\Music;
 use App\Models\Collection;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -17,7 +18,9 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         User::factory(10)->create();
-        $articles = Article::factory(10)->create();
+        Music::factory(10)->create();
+        Article::factory(10)->create();
+
         $artworks = Artwork::factory(40)->create();
         $collections = Collection::factory(5)->create();
 
@@ -27,6 +30,5 @@ class DatabaseSeeder extends Seeder
                 $collections->random(rand(1, 3))->pluck('id')->toArray()
             );
         }
-
     }
 }

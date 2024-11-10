@@ -3,8 +3,8 @@
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ArtworkController;
 use App\Http\Controllers\CollectionController;
-
-
+use App\Http\Controllers\FanartController;
+use App\Http\Controllers\MusicController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -31,6 +31,14 @@ require __DIR__.'/auth.php';
 Route::view('/home', 'home');
 
 Route::view('/about', 'about');
+
+Route::view('/changelog', 'changelog');
+
+Route::view('/community/fanart', [FanartController::class, 'index']);
+
+Route::get('/discography', [MusicController::class, 'index']);
+Route::get('/discography/{slug}', [MusicController::class, 'show']);
+
 
 Route::get('/gallery', [ArtworkController::class, 'index']);
 Route::get('/gallery/collection/{slug}', [CollectionController::class, 'index']);

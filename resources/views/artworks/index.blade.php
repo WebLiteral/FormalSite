@@ -7,7 +7,7 @@
 
 <div class='flex flex-col items-center font-cambria '>
 
-    <h1 class="font-oldenglish text-7xl w-max  pb-3 pt-1 px-4 m-10 lh-doubleborders">Gallery</h1>
+    <h1 class="lh-bigtitle">Gallery</h1>
 
     <div class="w-3/5 space-y-2">
         <p>Viewing all collections:</p>

@@ -17,7 +17,8 @@ return new class extends Migration
             $table->date('creation_date')->nullable();
             $table->string('description')->nullable();
             $table->string('file_url')->nullable();
-            $table->string('slug');
+            $table->string('slug')->unique();
+            $table->boolean('isvisible')->default(true);  
             $table->timestamps();
         });
     }

@@ -2,23 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Music;
-
-
 use Illuminate\Http\Request;
 
-
-
-class MusicController extends Controller
+class FanartController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $music = Music::all();
-
-        return view('discography.index')->with('allMusic', $music);
+        //
     }
 
     /**

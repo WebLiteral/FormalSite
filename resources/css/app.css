@@ -56,7 +56,11 @@ list-style-type: disc;
 }
 
 .lh-doubleborders {
-    @apply border-t-2 border-b-2 border-white 
+    @apply border-t-2 border-b-2 border-white;
+}
+
+.lh-bigtitle {
+    @apply font-oldenglish text-8xl w-max pb-3 pt-1 px-4 m-10 w-1/2 border-b-2 text-center;
 }
 
 .cascadelist ul>li::before {

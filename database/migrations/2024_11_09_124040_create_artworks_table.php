@@ -19,10 +19,10 @@ return new class extends Migration
             $table->date('creation_date')->nullable();
             $table->string('medium')->nullable();
             $table->string('dimensions')->nullable();  
-            $table->boolean('visibility')->default(true);  
-            $table->boolean('forsale')->default(true);  
+            $table->boolean('isvisible')->default(true);  
+            $table->boolean('isforsale')->default(true);  
             $table->boolean('issensitive')->default(false);
-            $table->string('slug');
+            $table->string('slug')->unique();
             $table->timestamps();
         });
     }

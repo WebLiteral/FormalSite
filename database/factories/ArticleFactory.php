@@ -4,6 +4,8 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
+use Illuminate\Support\Str;
+
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Article>
  */
@@ -17,11 +19,11 @@ class ArticleFactory extends Factory
     public function definition(): array
     {
         return [
-            'title' => fake()->unique()->sentence(),
+            'title' => $title = fake()->unique()->sentence(),
             'description' => fake()->unique()->sentence(),
-            'content' => implode(' ', fake()->paragraphs()),  
-            'slug' => implode('-', fake()->unique()->words()),  
-            'visible' => true
+            'content' => implode('-', fake()->paragraphs()),
+            'slug' => Str::slug($title),
+            'isvisible' => true
         ];
     }
 }
