@@ -47,6 +47,14 @@
     src: url('fonts/OldEnglishText.ttf')
 }
 
+
+/* css dedicated to just article styling */
+div.articlestyling li {
+margin-left: 2rem;
+list-style-type: disc;
+
+}
+
 .lh-doubleborders {
     @apply border-t-2 border-b-2 border-white 
 }
