@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Collection>
@@ -17,7 +18,12 @@ class CollectionFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'title' => $title = fake()->unique()->sentence(),
+            'file_url' => 'https://picsum.photos/seed/'. strval(rand(1,1000)).'/300',
+            'description' => fake()->unique()->sentence(),
+            'creation_date' => fake()->date('Y-m-d'),
+            'slug' => Str::slug($title)
+
         ];
     }
 }

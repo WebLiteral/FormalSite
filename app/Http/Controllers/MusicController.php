@@ -2,20 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Artwork;
-use App\Models\Collection;
-
 use Illuminate\Http\Request;
 
-class ArtworkController extends Controller
+class MusicController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $collection = Collection::all();
-        return view('artworks.index')->with('allCollections', $collection);
+        //
     }
 
     /**
@@ -37,11 +33,9 @@ class ArtworkController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show($slug)
+    public function show(string $id)
     {
-        $artwork = Artwork::where('slug', $slug)->first();
-
-        return view('artworks.show', compact('artwork'));
+        //
     }
 
     /**

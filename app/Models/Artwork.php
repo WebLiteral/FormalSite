@@ -10,6 +10,8 @@ class Artwork extends Model
 
     use HasFactory;
 
+// she's a beauty!!!!!!
+
     public function collections()
     {
         return $this->belongsToMany(Collection::class);

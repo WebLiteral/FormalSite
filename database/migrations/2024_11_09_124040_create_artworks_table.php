@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('artworks', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(\App\Models\Collection::class);
             $table->string('title')->nullable();
             $table->string('file_url')->nullable();
             $table->text('description')->nullable();
@@ -23,6 +22,7 @@ return new class extends Migration
             $table->boolean('visibility')->default(true);  
             $table->boolean('forsale')->default(true);  
             $table->boolean('issensitive')->default(false);
+            $table->string('slug');
             $table->timestamps();
         });
     }

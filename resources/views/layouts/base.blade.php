@@ -8,13 +8,13 @@
     @vite(['resources/css/app.css', 'resources/js/randomsong.js'])
 </head>
 
-<body>
+<body class="bg-black">
 
    @include('nav.header')
 @include('nav.subheader')
 
     
-    <div class="h-screen bg-black flex justify-center">
+    <div class="h-max bg-black flex justify-center">
         <div class="w-4/5  pt-6 p-6 text-white font-cambria">
                 @yield('content')
         </div>

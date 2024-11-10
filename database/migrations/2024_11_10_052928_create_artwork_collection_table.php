@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignId('artwork_id')->constrained()->onDelete('cascade'); // references users table
             $table->foreignId('collection_id')->constrained()->onDelete('cascade'); // references roles table
             $table->timestamps();
+            $table->unique(['artwork_id', 'collection_id']);
         });
     }
 

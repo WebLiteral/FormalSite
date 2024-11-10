@@ -1,17 +1,32 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Artwork;
+use App\Models\Collection;
+
 
 use Illuminate\Http\Request;
 
-class Collection extends Controller
+class CollectionController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+
+
+    public function index($slug)
     {
-        //
+        $collection = Collection::where('slug', $slug)->firstOrFail();
+
+        $artwork = $collection->artworks;
+
+        return view('collections.index')->with(
+            [
+                'allArtworksFromCollection' => $artwork,
+                'collection' => $collection
+            ]
+        )
+        ;
     }
 
     /**

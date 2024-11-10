@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ArtworkController;
+use App\Http\Controllers\CollectionController;
+
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -23,16 +25,18 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
+
+
+
 Route::view('/home', 'home');
 
 Route::view('/about', 'about');
 
 Route::get('/gallery', [ArtworkController::class, 'index']);
-
-
+Route::get('/gallery/collection/{slug}', [CollectionController::class, 'index']);
+Route::get('/gallery/artwork/{slug}', [ArtworkController::class, 'show']);
 
 Route::get('/articles', [ArticleController::class, 'index']);
 Route::get('/articles/{slug}', [ArticleController::class, 'show']);
-
 
 Route::view('/sitemap', 'sitemap');
