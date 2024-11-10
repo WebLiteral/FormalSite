@@ -7,6 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Artwork extends Model
 {
-    /** @use HasFactory<\Database\Factories\ArtworkFactory> */
+
     use HasFactory;
+
+    public function collections()
+    {
+        return $this->belongsToMany(Collection::class);
+    }
 }
+
+

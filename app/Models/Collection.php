@@ -9,4 +9,10 @@ class Collection extends Model
 {
     use HasFactory;
 
+    public function artworks()
+    {
+        return $this->belongsToMany(Artwork::class);
+    }
+
+
 }

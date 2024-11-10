@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Artwork;
 use App\Models\User;
 use App\Models\Article;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -16,7 +17,7 @@ class DatabaseSeeder extends Seeder
     {
         User::factory(10)->create();
         Article::factory(10)->create();
-
+        Artwork::factory(40)->create();
 
     }
 }

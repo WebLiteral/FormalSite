@@ -59,6 +59,16 @@ list-style-type: disc;
     @apply border-t-2 border-b-2 border-white 
 }
 
+.cascadelist ul>li::before {
+    content: "┕ ";
+}
+
+.cascadelist > li {
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

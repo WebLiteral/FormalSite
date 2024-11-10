@@ -13,7 +13,7 @@
             <span>|</span>
             <li><a href='/changelog'>Changelog</a></li>
             <span>|</span>
-            <li><a href='/sitemap'></a>Sitemap</li>
+            <li><a href='/sitemap'>Sitemap</a></li>
         </ul>
         <p class="font-bold text-4xl p-3 font-datatrash tracking-wide "><a href='/home'>LiteralHat.com</a></p>
         <p class="text-xs font-cambria">©2020 - 2024. All rights reserved.</p>

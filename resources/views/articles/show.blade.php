@@ -4,9 +4,9 @@
 
 @section('content')
 
+<a href="/articles" class="underline underline-offset-4 border-white italic p-10">&nbsp;Back to Articles&nbsp;</a>
 
 <div class='flex flex-col items-center font-cambria '>
-
     <div class="w-full pb-3 pt-1 px-4 m-10 border-b-2 text-center">
     <h1 class="text-7xl">
     {{$article->title}}
